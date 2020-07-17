@@ -2,46 +2,84 @@
 <html>
 <head>
 <style>
-table, th, td {
-  border: 1px solid black;
+table {
   border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #4CAF50;
+  color: white;
 }
 </style>
 </head>
 <body>
 
-  <center><h2>Redmi 7 Onclite Kernel (AOSP)(10)</h2></center>
+<center><h2>Redmi 7 Onclite Kernel (AOSP)(10)</h2></center>
 
-<table style="width:100%">
+<table>
   <tr>
     <th>Name</th>
-    <th>Changelog</th> 
-    <th>Size</th>
+    <th>Changelog</th>
     <th>Date</th>
+    <th>Download</th>
   </tr>
   <tr>
-    <td><a href="https://sourceforge.net/projects/bryn-kernel/files/Bryn-Kernel-AOSP-20200704-2322.zip/download">Bryn-V10.1.1</a></td>
-    <td>- Upgrade Kernel to V4.9.229.  - Etc ..</td>
-    <td>14.7 MB</td>
-    <td>5 July 2020</td>
-  </tr>
-  <tr>
-    <td><a href="https://sourceforge.net/projects/bryn-kernel/files/Bryn-Kernel-AOSP-20200707-0410.zip/download">Bryn-V10.2.1</a></td>
-    <td>- Smart Charger.  - Network Strength.</td>
-    <td>14.7 MB</td>
-    <td>7 July 2020</td>
-  </tr>
-  <tr>
-    <td><a href="https://sourceforge.net/projects/bryn-kernel/files/Bryn-Kernel-AOSP-20200710-1115.zip/download">Bryn-V10.3.1</a></td>
-    <td>- Linux Kernel to 4.9.230.  - Fingerprint Boost.  - Force Fast Charging.  - Sweep2Wake. - DoubleTab2Wake. - Improve Stability.</td>
-    <td>14.7 MB</td>
-    <td>10 July 2020</td>
-  </tr>
-  <tr>
-    <td><a href="https://sourceforge.net/projects/bryn-kernel/files/Bryn-Kernel-AOSP-20200712-0242.zip/download">Bryn-V10.4.1</a></td>
-    <td>- Merge CAF Tag LA.UM.8.6.2.r1-07800-89xx.0.  - Improve Good Audio. - Touch Boost.  - Dynamic Stune Boost</td>
-    <td>14.7 MB</td>
-    <td>12 July 2020</td>
+    <td>BrynKernel</td>
+    <td><p>Upstreamed with :
+- Linux Kernel 4.9.230
+- Merge CAF Tags LA.UM.8.6.2.r1-07800-89xx.0 
+(WLAN & Audio)</p>
+<p>
+CPU Governor : 
+- Blu_Schedutil as Default Governor
+- Performance
+- Powersave
+- Userspace
+- Ondemand
+- Conservative
+- Interactive
+</p>
+<p>
+GPU :
+- Adreno Idler
+- Adreno Boost
+</p>
+<p>
+I/O Schedulers:
+- Noop
+- Deadline
+- Cfq
+- Tripandroid
+- Anxiety
+- Bfq
+</p>
+<p>
+TCP Congestion Algorithms : 
+- Cdg
+- Westwood as Default TCP
+- Bbr
+- Sociopath
+</p>
+<p>
+Misc :
+- Fingerprint Boost
+- Enables force charging up to 900mA in usb mode
+- DTS X Eagle Driver
+- Reduced Latency
+- Simple Low Memory Killer
+- Latest Patches for SafetyNet Flags
+- Sound Control
+- Power Efficient Workqueues</p></td>
+    <td>July 18 2020</td>
+    <td>Download</td>
   </tr>
 </table>
 
